@@ -15,11 +15,11 @@
     --muted: #6e6e6e;
     --border: rgba(245,243,238,0.1);
   }
-
+ 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
+ 
   html { scroll-behavior: smooth; }
-
+ 
   body {
     background: var(--black);
     color: var(--white);
@@ -29,7 +29,7 @@
     overflow-x: hidden;
     cursor: none;
   }
-
+ 
   /* Custom cursor */
   .cursor {
     width: 12px; height: 12px;
@@ -52,7 +52,7 @@
     z-index: 9998;
     transition: transform 0.4s cubic-bezier(0.16,1,0.3,1), width 0.3s, height 0.3s, opacity 0.3s;
   }
-
+ 
   /* Nav */
   nav {
     position: fixed;
@@ -95,7 +95,7 @@
     transition: background 0.2s, transform 0.2s !important;
   }
   .nav-cta:hover { background: #d8ff50 !important; transform: scale(1.04) !important; }
-
+ 
   /* Hero */
   #hero {
     min-height: 100vh;
@@ -149,7 +149,7 @@
     0%,100% { opacity: 1; transform: scale(1); }
     50% { opacity: 0.5; transform: scale(1.5); }
   }
-
+ 
   .hero-title {
     font-family: 'Syne', sans-serif;
     font-size: clamp(4rem, 10vw, 9.5rem);
@@ -164,7 +164,7 @@
     color: transparent;
   }
   .hero-title .accent-word { color: var(--accent); }
-
+ 
   .hero-bottom {
     display: flex;
     justify-content: space-between;
@@ -215,7 +215,7 @@
   }
   @keyframes float { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(-6px)} }
   @keyframes fadeUp { from{opacity:0;transform:translateY(30px)} to{opacity:1;transform:translateY(0)} }
-
+ 
   /* Skills strip */
   .skills-strip {
     border-top: 1px solid var(--border);
@@ -243,7 +243,7 @@
     text-transform: uppercase;
   }
   .skill-pill .dot { width:5px;height:5px;background:var(--accent);border-radius:50%; }
-
+ 
   /* Section base */
   section { padding: 7rem 3rem; }
   .section-label {
@@ -262,7 +262,7 @@
     letter-spacing: -0.03em;
     margin-bottom: 1rem;
   }
-
+ 
   /* About */
   #about { border-top: 1px solid var(--border); }
   .about-grid {
@@ -307,7 +307,7 @@
   .skill-icon { font-size: 1.5rem; margin-bottom: 0.75rem; }
   .skill-card h4 { font-family: 'Syne', sans-serif; font-size: 0.85rem; font-weight: 700; margin-bottom: 0.4rem; letter-spacing: 0.03em; }
   .skill-card p { font-size: 0.78rem; color: var(--muted); line-height: 1.5; }
-
+ 
   /* Projects */
   #projects { border-top: 1px solid var(--border); background: var(--mid); }
   .projects-header {
@@ -323,7 +323,7 @@
     color: var(--border);
     line-height: 1;
   }
-
+ 
   .project-card {
     border: 1px solid var(--border);
     border-radius: 20px;
@@ -334,7 +334,7 @@
     position: relative;
   }
   .project-card:hover { border-color: rgba(200,240,62,0.25); transform: translateY(-4px); }
-
+ 
   .project-inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -342,7 +342,7 @@
   }
   .project-inner.reverse { direction: rtl; }
   .project-inner.reverse > * { direction: ltr; }
-
+ 
   .project-visual {
     position: relative;
     overflow: hidden;
@@ -355,7 +355,7 @@
     align-items: center;
     justify-content: center;
   }
-
+ 
   /* Project 1 — Connection Fotografía */
   .pv-connection {
     background: linear-gradient(135deg, #0d0d0d 0%, #1a1a2e 50%, #16213e 100%);
@@ -397,7 +397,7 @@
   .mock-products { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0.4rem; margin-bottom: 0.8rem; }
   .mock-product { background: #1a1a1a; border-radius: 4px; aspect-ratio: 1; border: 1px solid rgba(255,255,255,0.04); }
   .mock-btn { background: linear-gradient(90deg,#c8f03e,#a8d020); color: #000; padding: 0.4rem; border-radius: 4px; font-size: 0.55rem; font-weight: 700; text-align: center; letter-spacing: 0.05em; }
-
+ 
   /* Project 2 — Dekaceria */
   .pv-dekaceria {
     background: linear-gradient(135deg, #0a0a0a 0%, #1a0a0a 50%, #2d0a0a 100%);
@@ -453,7 +453,7 @@
   .deka-bar-label { display: flex; justify-content: space-between; font-size: 0.65rem; color: var(--muted); margin-bottom: 0.3rem; }
   .deka-bar-track { height: 4px; background: rgba(255,80,50,0.15); border-radius: 2px; margin-bottom: 0.6rem; }
   .deka-bar-fill { height: 100%; background: linear-gradient(90deg, #ff5032, #ff8060); border-radius: 2px; }
-
+ 
   /* Project 3 — UAA School */
   .pv-uaa {
     background: linear-gradient(135deg, #080d12 0%, #0d1829 50%, #0a1520 100%);
@@ -513,7 +513,7 @@
   .yoast-green { background: #28c840; }
   .yoast-orange { background: #febc2e; }
   .yoast-red { background: #ff5f57; }
-
+ 
   /* Project info panel */
   .project-info {
     padding: 3.5rem;
@@ -574,7 +574,7 @@
     flex-shrink: 0;
     margin-top: 0.05rem;
   }
-
+ 
   /* Tools section */
   #tools { border-top: 1px solid var(--border); }
   .tools-grid {
@@ -612,7 +612,7 @@
     overflow: hidden;
   }
   .tool-level-fill { height: 100%; background: var(--accent); border-radius: 2px; }
-
+ 
   /* Education */
   #education { border-top: 1px solid var(--border); background: var(--mid); }
   .edu-card {
@@ -655,7 +655,7 @@
     padding: 0.5rem 1rem; border-radius: 2rem;
     margin-top: 1rem;
   }
-
+ 
   /* Contact */
   #contact { border-top: 1px solid var(--border); text-align: center; }
   .contact-inner { max-width: 700px; margin: 0 auto; }
@@ -688,7 +688,7 @@
   .btn-primary:hover { background: #d8ff50; transform: scale(1.04); }
   .btn-ghost { border: 1px solid var(--border); color: var(--white); }
   .btn-ghost:hover { border-color: rgba(200,240,62,0.4); color: var(--accent); }
-
+ 
   /* Footer */
   footer {
     border-top: 1px solid var(--border);
@@ -700,11 +700,11 @@
   footer p { font-size: 0.8rem; color: var(--muted); }
   footer .footer-logo { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 0.95rem; }
   footer .footer-logo span { color: var(--accent); }
-
+ 
   /* Reveal animation */
   .reveal { opacity: 0; transform: translateY(40px); transition: opacity 0.8s ease, transform 0.8s ease; }
   .reveal.visible { opacity: 1; transform: translateY(0); }
-
+ 
   /* ── Gallery strip ── */
   .gallery-strip {
     border-top: 1px solid var(--border);
@@ -802,7 +802,7 @@
     transition: transform 0.2s;
   }
   .gallery-thumb:hover .cap-tag { transform: translateY(0); }
-
+ 
   /* ── Lightbox ── */
   #lightbox {
     display: none;
@@ -883,21 +883,152 @@
     transition: background 0.2s, transform 0.2s;
   }
   .lb-dot.active { background: var(--accent); transform: scale(1.3); }
-
+ 
   /* Responsive */
+  /* ═══════════════════════════════════════
+     RESPONSIVE — tablet (max 900px)
+  ═══════════════════════════════════════ */
   @media (max-width: 900px) {
+    /* Nav */
     nav { padding: 1.2rem 1.5rem; }
     .nav-links { display: none; }
-    #hero { padding: 0 1.5rem 4rem; }
+ 
+    /* Hero */
+    #hero { padding: 0 1.5rem 5rem; }
+    .hero-title { font-size: clamp(3rem, 12vw, 5rem); }
+    .hero-bottom { flex-direction: column; align-items: flex-start; gap: 2rem; }
+    .hero-stats { gap: 2rem; }
+ 
+    /* Sections */
     section { padding: 5rem 1.5rem; }
+    .section-title { font-size: clamp(2rem, 7vw, 3.5rem); }
+ 
+    /* About */
     .about-grid { grid-template-columns: 1fr; gap: 3rem; }
-    .project-inner { grid-template-columns: 1fr; }
+ 
+    /* Projects */
+    .projects-header { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+    .projects-count { font-size: 3rem; }
+    .project-inner { grid-template-columns: 1fr; direction: ltr; }
+    .project-inner.reverse { direction: ltr; }
     .project-visual { min-height: 280px; }
-    .tools-grid { grid-template-columns: repeat(3, 1fr); }
-    .hero-bottom { flex-direction: column; align-items: flex-start; }
-    .hero-stats { gap: 1.5rem; }
-    footer { flex-direction: column; gap: 1rem; text-align: center; }
-    .edu-card { grid-template-columns: 1fr; }
+    .project-info { padding: 2rem 1.5rem; }
+    .project-title { font-size: 1.8rem; }
+ 
+    /* Gallery */
+    .gallery-strip { padding: 1.2rem 1.5rem 1.5rem; }
+    .gallery-grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); }
+ 
+    /* Tools */
+    .tools-grid { grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    .tool-card { padding: 1.5rem 0.75rem; }
+ 
+    /* Education */
+    .edu-card { grid-template-columns: 1fr; gap: 1.5rem; }
+    .edu-badge { width: 60px; height: 60px; font-size: 0.55rem; }
+ 
+    /* Contact */
+    .contact-title { font-size: clamp(2.5rem, 10vw, 4rem); }
+    .contact-links { flex-direction: column; align-items: center; }
+ 
+    /* Footer */
+    footer { flex-direction: column; gap: 0.75rem; text-align: center; padding: 2rem 1.5rem; }
+ 
+    /* Lightbox arrows closer on tablet */
+    #lb-prev { left: 0.5rem; }
+    #lb-next { right: 0.5rem; }
+  }
+ 
+  /* ═══════════════════════════════════════
+     RESPONSIVE — móvil (max 480px)
+  ═══════════════════════════════════════ */
+  @media (max-width: 480px) {
+    /* Disable custom cursor on touch */
+    .cursor, .cursor-ring { display: none; }
+    body { cursor: auto; }
+ 
+    /* Nav */
+    nav { padding: 1rem 1.2rem; }
+    .nav-logo { font-size: 1rem; }
+ 
+    /* Hero */
+    #hero { padding: 0 1.2rem 4rem; min-height: 100svh; }
+    .hero-tag { font-size: 0.7rem; padding: 0.35rem 0.85rem; }
+    .hero-title { font-size: clamp(2.8rem, 14vw, 4rem); letter-spacing: -0.03em; }
+    .hero-desc { font-size: 0.9rem; }
+    .hero-stats { flex-wrap: wrap; gap: 1.2rem; }
+    .stat-num { font-size: 2rem; }
+    .stat-label { font-size: 0.7rem; }
+    .scroll-hint { display: none; }
+ 
+    /* Sections */
+    section { padding: 4rem 1.2rem; }
+    .section-label { font-size: 0.7rem; }
+    .section-title { font-size: clamp(1.8rem, 9vw, 2.8rem); }
+ 
+    /* Skills strip */
+    .skill-pill { font-size: 0.72rem; }
+ 
+    /* About */
+    .about-text p { font-size: 0.95rem; }
+    .skills-grid { grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+    .skill-card { padding: 1.2rem 1rem; }
+    .skill-card h4 { font-size: 0.78rem; }
+    .skill-card p { font-size: 0.72rem; }
+ 
+    /* Projects */
+    .project-number { font-size: 0.68rem; }
+    .project-title { font-size: 1.5rem; }
+    .project-desc { font-size: 0.88rem; }
+    .project-info { padding: 1.5rem 1.2rem; }
+    .project-tags { gap: 0.4rem; }
+    .tag { font-size: 0.65rem; padding: 0.28rem 0.7rem; }
+    .project-highlights li { font-size: 0.82rem; }
+    .project-visual { min-height: 220px; }
+ 
+    /* Gallery */
+    .gallery-strip { padding: 1rem 1.2rem 1.2rem; }
+    .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 0.6rem; }
+    .gallery-thumb .cap-tag { transform: translateY(0); font-size: 0.55rem; }
+    .gallery-thumb .zoom-icon { display: none; }
+ 
+    /* Tools */
+    .tools-grid { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
+    .tool-card { padding: 1.2rem 0.6rem; }
+    .tool-icon { font-size: 1.8rem; }
+    .tool-name { font-size: 0.72rem; }
+    .tool-cat { font-size: 0.62rem; }
+ 
+    /* Education */
+    .edu-card { padding: 1.5rem 1.2rem; }
+    .edu-degree { font-size: 1.1rem; }
+    .vote-badge { font-size: 0.65rem; }
+ 
+    /* Contact */
+    .contact-title { font-size: clamp(2rem, 11vw, 3rem); }
+    .contact-desc { font-size: 0.92rem; }
+    .contact-btn { padding: 0.8rem 1.5rem; font-size: 0.82rem; width: 100%; justify-content: center; }
+ 
+    /* Lightbox */
+    #lb-img { max-height: 60vh; border-radius: 6px; }
+    #lb-prev, #lb-next { width: 36px; height: 36px; font-size: 1rem; }
+    #lb-prev { left: 0.25rem; }
+    #lb-next { right: 0.25rem; }
+    #lb-caption { font-size: 0.72rem; padding: 0 1rem; }
+    #lb-close { top: 1rem; right: 1rem; width: 36px; height: 36px; }
+  }
+ 
+  /* ═══════════════════════════════════════
+     RESPONSIVE — móvil pequeño (max 360px)
+  ═══════════════════════════════════════ */
+  @media (max-width: 360px) {
+    .hero-title { font-size: 2.5rem; }
+    .section-title { font-size: 1.7rem; }
+    .skills-grid { grid-template-columns: 1fr; }
+    .tools-grid { grid-template-columns: repeat(2, 1fr); }
+    .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+    .hero-stats { gap: 1rem; }
+    .stat-num { font-size: 1.8rem; }
   }
 </style>
 </head>
@@ -1557,7 +1688,7 @@
       <a href="mailto:mario.toscano@ejemplo.com" class="contact-btn btn-primary">
         ✉️ Enviar correo
       </a>
-      <a href="https://linkedin.com" target="_blank" class="contact-btn btn-ghost">
+      <a href="www.linkedin.com/in/leonardo-toscano-b800591ab" target="_blank" class="contact-btn btn-ghost">
         in LinkedIn
       </a>
       <a href="https://github.com" target="_blank" class="contact-btn btn-ghost">
